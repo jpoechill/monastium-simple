@@ -1,22 +1,11 @@
 <template>
   <div>
-    <div class="container py-4">
-      <div class="row">
-        <div class="col-md-6">
-          Real Name – username@gmail.com <br>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, quis!
-        </div>
-        <div class="col-md-6 text-right">
-          Reservations | Edit Info | Edit Billing | Delete Account
-        </div>
-      </div>
-    </div>
-
-<!-- Start Reservation -->
+    <!-- Start Reservation -->
     <div class="container pb-3">
       <div class="row">
         <div class="col-md-12">
           My Reservations
+          <hr>
         </div>
       </div>
     </div>
@@ -60,6 +49,7 @@
       <div class="row">
         <div class="col-md-12">
           My Requests
+          <hr>
         </div>
       </div>
     </div>
@@ -103,6 +93,7 @@
       <div class="row">
         <div class="col-md-12">
           My History
+          <hr>
         </div>
       </div>
     </div>

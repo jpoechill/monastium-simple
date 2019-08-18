@@ -15,14 +15,14 @@
             <input type="text" class="mt-2 p-1">
           </div>
           <div class="mt-2 text-center">
-            <button class="w-100" @click="handleLogin()">
-              Login
+            <button class="w-100 p-1" @click="handleLogin()">
+              Login as Host
             </button>
           </div>
           <br>
           <div class="w-100 text-center">
-            <nuxt-link to="/login-host">
-              Looking for the Host's login?
+            <nuxt-link to="/login">
+              Looking for the Guest's login?
             </nuxt-link>
           </div>
         </div>
@@ -53,23 +53,4 @@ export default {
 </script>
 
 <style>
-input[type='text'] {
-  border-radius: 15px;
-  border: 2px solid #eee;
-  width: 100%;
-  /* padding: .4rem; */
-}
-
-button {
-  border-radius: 15px;
-  background-color: aqua;
-  border: none;
-  color: blue;
-  font-weight: 700;
-  padding: 0.35rem 0px;
-}
-
-button:hover {
-  cursor: pointer;
-}
 </style>
