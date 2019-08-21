@@ -8,11 +8,11 @@
           </p>
           <div class="pb-2">
             Email <br>
-            <input type="text" class="mt-2 p-1">
+            <input type="text" class="mt-2 p-1 pl-3" value="Host's Login">
           </div>
           <div class="pb-2">
             Password <br>
-            <input type="text" class="mt-2 p-1">
+            <input type="text" class="mt-2 p-1 pl-3" value="Password">
           </div>
           <div class="mt-2 text-center">
             <button class="w-100 p-1" @click="handleLogin()">
@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     handleLogin() {
-      this.$store.commit('login')
+      this.$store.commit('loginAsHost')
       this.$router.push({
         path: '/'
       })

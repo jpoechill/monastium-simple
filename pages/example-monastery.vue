@@ -58,43 +58,55 @@
 
       <div class="row pb-4">
         <div class="col-md-3">
+          Room #001 <br>
           01/01/2020 - 01/01/2020
         </div>
         <div class="col-md-3">
+          <br>
           Duration: 4 days
         </div>
         <div class="col-md-3">
-          Price: $200
+          <br>
+          Price: $200/night
         </div>
         <div class="col-md-3 text-center">
-          <button @click="handleRequest()" class="w-100">Request</button><br>
+          <br>
+          Unavailable
         </div>
       </div>
       <div class="row pb-4">
         <div class="col-md-3">
+          Room #002 <br>
           01/01/2020 - 01/01/2020
         </div>
         <div class="col-md-3">
+          <br>
           Duration: 4 days
         </div>
         <div class="col-md-3">
-          Price: $200
+          <br>
+          Price: $200/night
         </div>
         <div class="col-md-3 text-center">
-          <button @click="handleRequest()" class="w-100">Request</button><br>
+          <br>
+          Unavailable
         </div>
       </div>
       <div class="row pb-4">
         <div class="col-md-3">
+          Room #003 <br>
           01/01/2020 - 01/01/2020
         </div>
         <div class="col-md-3">
+          <br>
           Duration: 4 days
         </div>
         <div class="col-md-3">
-          Price: $200
+          <br>
+          Price: $200/night
         </div>
         <div class="col-md-3 text-center">
+          <br>
           <button @click="handleRequest()" class="w-100">Request</button><br>
         </div>
       </div>

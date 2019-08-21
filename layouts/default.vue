@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="w-100 text-center py-2 font-weight-bold text-white fixed-top" style="background-color: #0ab9b9;">
-      PROTOTYPE: Last Updated August 17th, 2019
+      PROTOTYPE: Last Updated August 20th, 2019
     </div>
 
     <!-- Header -->
@@ -20,7 +20,12 @@
                 <nuxt-link to="/sign-up">Sign Up</nuxt-link>
               </div>
               <div v-else class="d-inline-block">
-                <nuxt-link to="/guests-dashboard">My Dashboard</nuxt-link> | 
+                <span v-if="!userIsHost">
+                  <nuxt-link to="/guests-dashboard">Guest's Dashboard</nuxt-link> | 
+                </span>
+                <span v-else>
+                  <nuxt-link to="/hosts-dashboard">Host's Dashboard</nuxt-link> | 
+                </span>
                 <span @click="handleLogout()" >
                   <nuxt-link to="#" class="d-inline-block">Logout</nuxt-link>
                 </span>
@@ -53,6 +58,9 @@ export default {
   computed: {
     loggedIn() {
       return this.$store.state.loggedIn
+    },
+    userIsHost() {
+      return this.$store.state.userIsHost
     }
   },
   methods: {
@@ -69,5 +77,17 @@ export default {
 <style>
 body {
   background-color: #f7f7f7;
+}
+
+.fade-enter-active {
+  transition: opacity 0.15s;
+}
+
+.fade-leave-active {
+  transition: opacity 0.15s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>

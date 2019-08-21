@@ -32,7 +32,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  // transition: 'fade'
+}
 </script>
 
 <style>
