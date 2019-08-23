@@ -25,9 +25,10 @@
             <div class="row">
               <div class="col-md-12 bg-light rounded p-3">
                 Dates <span class="float-right">01/01/01 - 02/02/01</span><br>
-                Duration <span class="float-right">4 days</span> <br>
-                Room <span class="float-right">#002</span> <br>
-                Paid <span class="float-right">$400.00</span> <br>
+                Duration <span class="float-right">4 days</span><br>
+                Room <span class="float-right">#002</span><br>
+                Paid <span class="float-right">$400.00</span><br>
+                Res. ID <span class="float-right">AAA123</span><br>
               </div>
             </div>
           </div>
@@ -44,7 +45,7 @@
           </div>
         </div>
         <div class="col-md-3 text-center">
-          <button class="w-100">
+          <button class="w-100" data-toggle="modal" data-target="#reportIssue">
             Report Issue
           </button>
         </div>
@@ -82,7 +83,7 @@
           </div>
         </div>
         <div class="col-md-3 text-center">
-          <button class="w-100">
+          <button class="w-100" data-toggle="modal" data-target="#cancelReservation">
             Cancel Reservation
           </button>
         </div>
@@ -131,7 +132,7 @@
           </div>
         </div>
         <div class="col-md-3 text-center">
-          <button class="w-100">
+          <button class="w-100" data-toggle="modal" data-target="#cancelRequest">
             Cancel Request
           </button>
         </div>
@@ -168,7 +169,7 @@
           </div>
         </div>
         <div class="col-md-3 text-center">
-          <button class="w-100">
+          <button class="w-100" data-toggle="modal" data-target="#cancelRequest">
             Cancel Request
           </button>
         </div>
@@ -217,7 +218,7 @@
           </div>
         </div>
         <div class="col-md-3 text-center">
-          <button class="w-100">
+          <button type="button" class="w-100" data-toggle="modal" data-target="#exampleModal">
             Leave a Review
           </button>
         </div>
@@ -256,7 +257,6 @@
           </div>
         </div>
         <div class="col-md-3 text-center">
-          Thank you for your review! <br>
           <nuxt-link to="/example-monastery">Go to review.</nuxt-link>
         </div>
       </div>
@@ -304,7 +304,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  transition: 'fade'
+}
 </script>
 
 <style>

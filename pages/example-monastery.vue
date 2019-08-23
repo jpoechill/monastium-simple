@@ -1,5 +1,34 @@
 <template>
   <div>
+    <!-- Start Review Modal -->
+    <div 
+      class="modal fade" 
+      id="requestReservation" 
+      tabindex="-1" 
+      role="dialog" 
+      aria-labelledby="requestReservationLabel" 
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body pb-0">
+            <p>
+              Request Reservation
+            </p>
+            <p>
+              Your card will be charged $xx.xx and a reservation request will be sent to host. 
+            </p>
+            <p>
+              Upon approval, your request will be reserved. The reservation will be ready for stay at the date and time agreed upon.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="w-50" data-dismiss="modal">Cancel</button>
+            <button type="button" class="w-50" data-dismiss="modal">Leave Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container py-4">
       <div class="row">
         <div class="col-md-6">
@@ -89,7 +118,7 @@
         </div>
         <div class="col-md-3 text-center">
           <br>
-          Unavailable
+          Pending Approval
         </div>
       </div>
       <div class="row pb-4">
@@ -107,7 +136,9 @@
         </div>
         <div class="col-md-3 text-center">
           <br>
-          <button @click="handleRequest()" class="w-100">Request</button><br>
+          <button class="w-100"  data-toggle="modal" data-target="#requestReservation">
+            Request
+          </button>
         </div>
       </div>
     </div>
@@ -164,7 +195,8 @@ export default {
         })
       }
     }
-  }
+  },
+  transition: 'fade'
 }
 </script>
 

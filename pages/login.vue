@@ -53,23 +53,4 @@ export default {
 </script>
 
 <style>
-input[type='text'] {
-  border-radius: 15px;
-  border: 2px solid #eee;
-  width: 100%;
-  /* padding: .4rem; */
-}
-
-button {
-  border-radius: 15px;
-  background-color: aqua;
-  border: none;
-  color: blue;
-  font-weight: 700;
-  padding: 0.35rem 0px;
-}
-
-button:hover {
-  cursor: pointer;
-}
 </style>

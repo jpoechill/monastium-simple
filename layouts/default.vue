@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="w-100 text-center py-2 font-weight-bold text-white fixed-top" style="background-color: #0ab9b9;">
-      PROTOTYPE: Last Updated August 20th, 2019
+      PROTOTYPE: Last Updated August 22th, 2019
     </div>
 
     <!-- Header -->
@@ -79,6 +79,8 @@ body {
   background-color: #f7f7f7;
 }
 
+/* Fade Transitions */
+
 .fade-enter-active {
   transition: opacity 0.15s;
 }
@@ -89,5 +91,51 @@ body {
 
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+
+/* Modal Custom-Styles */
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-footer {
+  border-top: none !important;
+}
+
+.modal-backdrop.show {
+  opacity: 0.25;
+}
+
+.modal-content {
+  border: none;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 5rem auto;
+  }
+}
+
+/* Buttons */
+
+input[type='text'] {
+  border-radius: 15px;
+  border: 2px solid #eee;
+  width: 100%;
+  /* padding: .4rem; */
+}
+
+button {
+  border-radius: 15px;
+  background-color: aqua;
+  border: none;
+  color: blue;
+  font-weight: 700;
+  padding: 0.35rem 0px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 </style>
